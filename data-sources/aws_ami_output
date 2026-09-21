@@ -1,0 +1,86 @@
+{
+  "allow_unsafe_filter" = tobool(null)
+  "architecture" = "x86_64"
+  "arn" = "arn:aws:ec2:us-east-1::image/ami-0220d79f3f480ecf5"
+  "block_device_mappings" = toset([
+    {
+      "device_name" = "/dev/sda1"
+      "ebs" = tomap({
+        "delete_on_termination" = "true"
+        "encrypted" = "false"
+        "iops" = "3000"
+        "snapshot_id" = "snap-0392f823dead734e3"
+        "throughput" = "125"
+        "volume_initialization_rate" = "0"
+        "volume_size" = "20"
+        "volume_type" = "gp3"
+      })
+      "no_device" = ""
+      "virtual_name" = ""
+    },
+  ])
+  "boot_mode" = "uefi-preferred"
+  "creation_date" = "2026-01-14T00:00:26.000Z"
+  "deprecation_time" = "2028-01-14T00:00:26.000Z"
+  "description" = "Redhat-9-DevOps-Practice"
+  "ena_support" = true
+  "executable_users" = tolist(null) /* of string */
+  "filter" = toset([
+    {
+      "name" = "name"
+      "values" = toset([
+        "Redhat-9-DevOps-Practice",
+      ])
+    },
+    {
+      "name" = "root-device-type"
+      "values" = toset([
+        "ebs",
+      ])
+    },
+    {
+      "name" = "virtualization-type"
+      "values" = toset([
+        "hvm",
+      ])
+    },
+  ])
+  "hypervisor" = "xen"
+  "id" = "ami-0220d79f3f480ecf5"
+  "image_id" = "ami-0220d79f3f480ecf5"
+  "image_location" = "973714476881/Redhat-9-DevOps-Practice"
+  "image_owner_alias" = ""
+  "image_type" = "machine"
+  "imds_support" = ""
+  "include_deprecated" = false
+  "kernel_id" = ""
+  "last_launched_time" = ""
+  "most_recent" = true
+  "name" = "Redhat-9-DevOps-Practice"
+  "name_regex" = tostring(null)
+  "owner_id" = "973714476881"
+  "owners" = tolist([
+    "973714476881",
+  ])
+  "platform" = ""
+  "platform_details" = "Red Hat Enterprise Linux"
+  "product_codes" = toset([])
+  "public" = true
+  "ramdisk_id" = ""
+  "region" = "us-east-1"
+  "root_device_name" = "/dev/sda1"
+  "root_device_type" = "ebs"
+  "root_snapshot_id" = "snap-0392f823dead734e3"
+  "sriov_net_support" = "simple"
+  "state" = "available"
+  "state_reason" = tomap({
+    "code" = "UNSET"
+    "message" = "UNSET"
+  })
+  "tags" = tomap({})
+  "timeouts" = null /* object */
+  "tpm_support" = ""
+  "uefi_data" = tostring(null)
+  "usage_operation" = "RunInstances:0010"
+  "virtualization_type" = "hvm"
+}
